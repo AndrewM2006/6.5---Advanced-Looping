@@ -219,11 +219,15 @@ namespace _6._5___Advanced_Looping
             {
                 for (int i = 1; i < 10; i++)
                 {
-                    if (i < 9)
+                    if (i == 1)
+                    {
+                        Console.Write(i * j + " ");
+                    }
+                    else if (i < 9)
                     {
                         if (i * j < 10)
                         {
-                            Console.Write(i * j + "  ");
+                            Console.Write(" " + i * j + " ");
                         }
                         else
                         {
@@ -232,7 +236,14 @@ namespace _6._5___Advanced_Looping
                     }
                     else
                     {
-                        Console.WriteLine(i*j);
+                        if (i * j < 10)
+                        {
+                            Console.WriteLine(" " + i * j);
+                        }
+                        else
+                        {
+                            Console.WriteLine(i * j);
+                        }
                     }
                 }
             }
