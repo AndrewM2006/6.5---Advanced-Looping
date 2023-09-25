@@ -64,6 +64,10 @@ namespace _6._5___Advanced_Looping
                 {
                     Question12();
                 }
+                else if (menuOption == "13")
+                {
+                    Question13();
+                }
                 else if (menuOption == "Q" || menuOption == "q")
                 {
                     Environment.Exit(0);
@@ -328,6 +332,52 @@ namespace _6._5___Advanced_Looping
                         else
                         {
                             Console.Write(" " + (j - i));
+                        }
+                    }
+                }
+            }
+        }
+        public static void Question13()
+        {
+            Question11();
+            for (int j = 8; j > 0; j--)
+            {
+                for (int i = -8; i < 10; i++)
+                {
+                    if (i <= 0)
+                    {
+                        if (j + i <= 0)
+                        {
+                            Console.Write("  ");
+                        }
+                        else
+                        {
+                            Console.Write(" " + (j + i));
+                        }
+                    }
+                    else
+                    {
+                        if (i == 9)
+                        {
+                            if (j - i <= 0)
+                            {
+                                Console.WriteLine("  ");
+                            }
+                            else
+                            {
+                                Console.WriteLine(" " + (j - i));
+                            }
+                        }
+                        else
+                        {
+                            if (j - i <= 0)
+                            {
+                                Console.Write("  ");
+                            }
+                            else
+                            {
+                                Console.Write(" " + (j - i));
+                            }
                         }
                     }
                 }
