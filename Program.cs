@@ -60,6 +60,10 @@ namespace _6._5___Advanced_Looping
                 {
                     Question11();
                 }
+                else if (menuOption == "12")
+                {
+                    Question12();
+                }
                 else if (menuOption == "Q" || menuOption == "q")
                 {
                     Environment.Exit(0);
@@ -292,6 +296,38 @@ namespace _6._5___Advanced_Looping
                             {
                                 Console.Write(" " + (j - i));
                             }
+                        }
+                    }
+                }
+            }
+        }
+        public static void Question12()
+        {
+            Question11();
+            for (int j = 8; j > 0; j--)
+            {
+                for (int i=8; i >= 0; i--)
+                {
+                    if (i == 0)
+                    {
+                        if (j - i <= 0)
+                        {
+                            Console.WriteLine("  ");
+                        }
+                        else
+                        {
+                            Console.WriteLine(" " + (j - i));
+                        }
+                    }
+                    else
+                    {
+                        if (j - i <= 0)
+                        {
+                            Console.Write("  ");
+                        }
+                        else
+                        {
+                            Console.Write(" " + (j - i));
                         }
                     }
                 }
